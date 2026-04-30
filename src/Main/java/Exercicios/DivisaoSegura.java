@@ -9,18 +9,18 @@ public class DivisaoSegura {
 
         try {
 
-            System.out.print("Digite o dividendo: ");
-            int dividendo = scanner.nextInt();
+            System.out.print("Digite o numerador: ");
+            int numerador = scanner.nextInt();
 
-            System.out.print("Digite o divisor: ");
-            int divisor = scanner.nextInt();
+            System.out.print("Digite o denominador: ");
+            int denominador = scanner.nextInt();
 
-            System.out.println("Resultado: " + dividendo / divisor);
+            System.out.println("Resultado: " + numerador / denominador);
 
         } catch (ArithmeticException e){
-            System.out.println("O campo de divisor não pode ser zero!");
+            System.out.println("O campo de denominador não pode ser zero!");
         } catch (InputMismatchException e){
-            System.out.println("Os campos de dividendo e divisor precisam ser numéricos!");
+            System.out.println("Os campos de dividendo e denominador precisam ser numéricos!");
         }
 
         scanner.close();
