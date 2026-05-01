@@ -1,17 +1,18 @@
-package Main.java.Exercicios;
+package Main.java;
 
+import javax.swing.*;
 import java.io.*;
 
 public class CheckedException {
     public static void main(String[] args) {
-        String nomeDoArquivo = null;
+        String nomeDoArquivo = "checklis-estudo-bryan.txt";
 
         try {
             imprimirArquivoNoConsole(nomeDoArquivo);
         } catch (FileNotFoundException e){
-
+            JOptionPane.showMessageDialog(null, "Revise o nome do arquivo que desejar imprimir! " + e.getCause());
         } catch (IOException e){
-
+            JOptionPane.showMessageDialog(null, "Ocorreu um erro inespirado! " + e.getMessage());
         }
     }
 

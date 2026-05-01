@@ -1,0 +1,70 @@
+Checklist de Estudos - Bryan Gabriel
+
+[✔] Concluído
+[~] Em andamento
+[ ] Não iniciado
+
+----------------------------------------
+📌 Fundamentos de Programação
+----------------------------------------
+[✔] Lógica de Programação
+[✔] Estruturas condicionais
+[✔] Estruturas de repetição
+[✔] Variáveis e tipos de dados
+[✔] Operadores
+
+----------------------------------------
+📌 Java Básico
+----------------------------------------
+[✔] Sintaxe básica
+[✔] Entrada e saída (Scanner / JOptionPane)
+[✔] Métodos
+[✔] static vs não static
+
+----------------------------------------
+📌 Programação Orientada a Objetos
+----------------------------------------
+[✔] Encapsulamento
+[✔] Herança
+[✔] Polimorfismo
+[✔] Abstração
+
+----------------------------------------
+📌 Java Intermediário
+----------------------------------------
+[✔] Collections (List, Set, Map)
+[~] Tratamento de exceções
+[ ] Manipulação de arquivos (File, BufferedReader)
+[ ] Streams API
+
+----------------------------------------
+📌 Git e GitHub
+----------------------------------------
+[✔] Git init / add / commit
+[✔] Push e pull
+[✔] Criar repositório
+[ ] Branches
+[ ] Merge
+[ ] Pull Requests
+
+----------------------------------------
+📌 Banco de Dados
+----------------------------------------
+[ ] SQL básico
+[ ] MySQL ou PostgreSQL
+[ ] CRUD
+[ ] JDBC
+
+----------------------------------------
+📌 Spring Boot (Back-end)
+----------------------------------------
+[ ] Introdução ao Spring Boot
+[ ] Criar API REST
+[ ] Controllers
+[ ] Services
+[ ] Repositories
+[ ] JPA / Hibernate
+[ ] Validações
+[ ] Tratamento de exceções em API
+
+----------------------------------------
