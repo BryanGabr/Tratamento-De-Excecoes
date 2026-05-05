@@ -19,8 +19,7 @@ public class SistemaDeLoginExceptionCustomizada {
         return senha;
     }
 
-    public void login(String usuario, String senha) throws LoginInvalidoException, UsuarioInvalidoException, SenhaInvalidoException {
-        if (!this.usuario.equals(usuario) && !this.senha.equals(senha)) throw new LoginInvalidoException();
+    public void login(String usuario, String senha) throws LoginInvalidoException{
 
         if (!this.usuario.equals(usuario)) throw new UsuarioInvalidoException();
 
@@ -48,21 +47,17 @@ public class SistemaDeLoginExceptionCustomizada {
             user.login(usuario, senha);
         } catch (LoginInvalidoException e) {
             JOptionPane.showMessageDialog(null, e.getMessage());
-        } catch (UsuarioInvalidoException e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
-        } catch (SenhaInvalidoException e) {
-            JOptionPane.showMessageDialog(null, e.getMessage());
         }
     }
 }
 
 class LoginInvalidoException extends Exception {
-    public LoginInvalidoException() {
-        super("Usuário e senha inválidos!");
+    public LoginInvalidoException(String mensagem) {
+        super(mensagem);
     }
 }
 
-class UsuarioInvalidoException extends Exception {
+class UsuarioInvalidoException extends LoginInvalidoException {
 
     public UsuarioInvalidoException() {
         super("Usuário inválido!");
@@ -70,7 +65,7 @@ class UsuarioInvalidoException extends Exception {
 
 }
 
-class SenhaInvalidoException extends Exception {
+class SenhaInvalidoException extends LoginInvalidoException {
 
     public SenhaInvalidoException() {
         super("Senha inválida!");
